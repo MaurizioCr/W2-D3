@@ -143,7 +143,35 @@ console.log(eyeColor)
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
+// for (let i=0; i < starWarsCharacters.length; i++){
+// switch (starWarsCharacters[i].eye_color){
+//     case 'blue':
+//         eyeColor.blue.push(starWarsCharacters.eye_color)
+//         break
 
+//     case 'yellow': 
+//         eyeColor.yellow.push(starWarsCharacters.eye_color)
+//         break
+
+//     case 'brown':
+//         eyeColor.brown.push(starWarsCharacters.eye_color)
+//         break
+
+//     case 'red':
+//         eyeColor.red.push(starWarsCharacters.eye_color)
+//         break
+
+//     case 'blue_gray':
+//       eyeColor.brown.push(starWarsCharacters.eye_color)
+//         break
+//         default:
+//           break
+
+    
+
+// console.log("ciao")
+// console.log("ciao" + eyeColor)
+// }
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
@@ -203,9 +231,12 @@ console.log( switchGender)
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
 */
-for (let i=0; i < starWarsCharacters.length; i++){
-if(femaleCharacters[i] === characters[i]){
-  characters.splice([i])
+for (let i=0; i < characters.length; i++){
+for (let j=0; i < femaleCharacters.length; j++){
+
+if(femaleCharacters[i] === characters[j]){
+  characters.splice([j, 1])
+}
 }
 }
 console.log(characters)
